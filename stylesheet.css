@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.topleft {
+    background-color: #F3161E;
+    padding: 15px;
+    float: left;
+    width: 49%;
+    min-height: 125px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.topright {
+    background-color: #F3161E;
+    padding: 15px;
+    float: right;
+    width: 49%;
+    min-height: 125px;
+    margin-bottom: 5px;
+}
+
+.left {
+    float: left;
+    width: 20%;
+}
+
+.right {
+    float: left;
+    width: 20%; 
+  }
+  
+.mainimage {
+    background-color: #EFEBC4;
+    text-align: center;
+    width: 100%; 
+}
+
+.maintext {
+    background-color: #FABC13;
+    float: left;
+    width: 100%
+
+}
+
+  @media screen and (max-width: 800px) {
+    .left, .mainimage, .right, .topleft, .topright, .maintext {
+      width: 100%; 
+    }
+  }

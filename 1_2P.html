@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="topleft">
+        <p>Welcome to my website for 1.2P!</p>
+    </div>
+
+    <div class="topright">
+        <p>Your current date and time is: <span id="date-time"></span></p>
+    </div>
+    <br>
+    <div class="mainimage">
+        <h1>Task 1.2P - Jai Knight</h1>
+        <picture>
+            <source media="(min-width: 500px)" srcset="image1.jpg">
+            <img src="image2.JPG" style="width:400px">
+        </picture>
+        <p style="font-size: small;font-family: sans-serif;font-style: italic;">The above images (that I took myself!) changes depending on screen width, 
+            with 500px showing an image of flowers and 400px showing the second image of a waterfall </p>
+    
+    </div>
+    
+    <div class="maintext">
+        <h2> 5 String Methods </h2>
+        <h3> 1. Slicing a portion of string, from 7 to 12. </h3>
+        <p>Unmodified string is: "Apple, Banana, Passionfruit"</p>
+        <p>Modified string: <span id="strSlice"></span> </p>
+        <br>
+
+        <h3> 2. Replacing the string with another string using .replace</h3>
+        <p>Unmodified string is: "Hello Class SIT120!"</p>
+        <p>Modified string is: <span id="strReplace"></span></p>
+        <br>
+
+        <h3> 3. Converting a string into CAPITALISED TEXT </h3>
+        <p>Unmodified string is: "hello class sit120!"</p>
+        <p>Modified string is: <span id="strToUpper"></span></p>
+        <br>
+
+        <h3> 4. Joining two strings using concat</h3>
+        <p>Unmodified strings are: "Hello", " ", "Class", " ", "SIT120!"</p>
+        <p>Modified string is: <span id="strConcat"></span></p>
+        <br>
+
+        <h3> 5. Trimming the string of any excess blank spaces</h3>
+        <p>Unmodified string is: "               Hello!             " (There are about 10 spaces each side of the word)</p>
+        <p>Modified string is: <span id="strTrim"></span></p>
+        <br>
+
+        <h3 style="text-align:center"> Reflection on String Methods</h3>
+        <p style="text-align:center"> String methods allow for the modification of provided or inputted strings, 
+            and allow for conversions and other useful methodologies. 
+            The most useful method from these examples in my opinion is using trim, 
+            as you could remove any excess text inputted from a user, and would allow for cleaner usage of text without errors.</p>
+        <br>
+
+        <h2> 5 Number Methods </h2>
+        <h3> 1. Simple addition </h3>
+        <p> Equation to solve: 5 + 7 </p>
+        <p> Equation answer: <span id="numAddition"></span></p>
+        <br>
+
+        <h3> 2. Using toString() to convert a number to a string </h3>
+        <p> What is converting: x = 613, "12 + 30" and 613 as a standalone number</p>
+        <p id="numToString"></p>
+        <br>
+
+        <h3> 3. Using toExponential() to round a number to specific decimal places, with output being in exponential notation</h3>
+        <p> Value to round to 0, 2, 3 and 6 places: 6.6892 </p>
+        <p id="numToExponential"></p>
+        <br>
+
+        <h3> 4. Using toFixed() to get a number and its decimal places at a specified decimal place </h3>
+        <p> Value to round to 0, 2, 3 and 6 places: 12.4193 </p>
+        <p id="numToFixed"></p>
+        <br>
+
+        <h3> 5. Using Number() to convert applicable strings to number value</h3>
+        <p> List of strings to convert: "true", "false", "15", "   15", "15    ", "15.15", "15,15", "15 15", "Dude"</p>
+        <p>Note that the last three strings will return NaN, as they cannot be converted to a number value</p>
+        <p id="numToNumber"></p>
+        <br>
+
+        <h3 style="text-align:center"> Reflection on Number Methods</h3>
+        <p style="text-align:center"> Number methods allow for the usage of provided or inputted values to perform arithmetic 
+            or pass certain parameters within functions or other methods. The most useful method from these examples is using number()
+            to convert strings into a number value, as it serves as a conversion method for strings (provided it is a numeric value as a string), 
+            and also supports boolean values. However, this cannot support strictly string values or a mix of the two, such as "15,15"
+            and as such will return NaN (error) </p>
+        <br>
+
+
+        <h2>5 Array Methods</h2>
+        <p> The array "cars", containing "Audi", "Ford" and "Porsche" will be used through this section, with the array "numbers" 
+            containing "21", "523", "5487" and "911" being used in the pop method
+        </p>
+        <br>
+        <h3> 1. Using .length to return the length of an array </h3>
+        <p> Length of array "cars": <span id="arrayLength"></span></p>
+        <p> Length of array "numbers": <span id="arrayLength1"></span></p>
+        <br>
+
+        <h3> 2. Using toString to convert the array into a single string of array values, separated by commas</h3>
+        <p id="arrayToString"></p>
+        <br>
+
+        <h3> 3. Using join() to also join all array values into a single string</h3>
+        <p> This can, instead of using a comma, be used to add a custom value, such as "*" to be between each array value</p>
+        <p> In this example, ", " will be used to make it neater with a space after the comma, however this could be anything</p>
+        <p id="arrayJoin"></p>
+        <br>
+
+        <h3> 4. Using push() to add a value into the array</h3>
+        <p>In this example, the value "Toyota" will be added to the array "cars" </p>
+        <p id="arrayPush"></p>
+        <p id="arrayPush1"></p>
+        <br>
+
+        <h3> 5. Using pop() to remove a value from the array</h3>
+        <p>In this example, "5487" will be 'popped' out of the array "numbers"</p>
+        <p id="arrayPop"></p>
+        <p id="arrayPop1"></p>
+        <br><br>
+
+        <h3 style="text-align:center"> Reflection on Array Methods</h3>
+        <p style="text-align:center"> Array Methods allow for the ability to append either strings or integers to a list, 
+            which can then be modified, read or added to with further array methods. The most useful methods from these examples in my opinion are 
+            push(), pop() and join(), as it allows for interactions with the array, with push adding a value, pop removing a value and join
+            allowing to show the results of the array when requested. </p>
+        <br>
+
+        <h2> 5 Date Methods </h2>
+        <p> The first date method you may have noticed already, but in-case you haven't, it is at the top-right of the page whenever you load this page</p>
+        <h3> 1. Displaying date as a more readable format using toDateString()</h3>
+        <p id="dateToDateString"></p>
+        <br>
+
+        <h3> 2. Converting the date to a string using UTC standard</h3>
+        <p id="dateToUTC"></p>
+        <br>
+
+        <h3> 3. Converting the date to a string using ISO standard</h3>
+        <p id="dateToISO"></p>
+        <br>
+
+        <h3> 4. using new date() to add 24 hours (86400000 milliseconds) to a specified date</h3>
+        <p>86400000 from 19/09/2023 is: </p>
+        <p id="date24hours"></p>
+        <br><br>
+
+        <h3 style="text-align:center"> Reflection on Date Methods</h3>
+        <p style="text-align:center"> Date methods are an interesting methodology, as it allows for reading the user's current time and date,
+            allows for the modification of format and reading as different time standards, as well as being able to add, remove
+            and/or update the time with simple methods. However, at least with my current knowledge, I think the versatility of 
+            date methods are somewhat limited, as I can imagine only a handful of purposes it can be used for such as displaying the time 
+            for the user, showing basic time additions/subtractions and standard conversions.</p>
+        <br>
+
+
+        <h2> 2 Function Methods </h2>
+        <h3> 1. Function to convert fahrenheit to celcius</h3>
+        <p id="funcToCelcius"></p>
+        <p id="funcToCelcius1"></p>
+        <p id="funcToCelcius2"></p>
+        <br>
+
+        <h3> 2. Function to join two strings together </h3>
+        <p id="funcJoinString"></p>
+        <p id="funcJoinString1"></p>
+        <br><br>
+
+        <h3 style="text-align:center"> Reflection on Function Methods</h3>
+        <p style="text-align:center"> Function Methods, in my opinion, are the quintissential basics for understanding and writing programming,
+            and are the most helpful when the need to reuse or shorten code is important. With these two examples provided above,
+            with only the need to call the function and provide some basic values, I can perform a set of instructions as many times
+            as desired, with little to no detriment on performance, as well as making the back-end code significantly
+            easier to read and modify. </p>
+        <br>
+    </div>
+
+
+    <!--Scripts for String Methods -->
+    <script>
+        let text1 = "Apple, Banana, Passionfruit";
+        let part1 = text1.slice(7, 12);
+        document.getElementById("strSlice").innerHTML = part1;
+    </script>
+
+    <script>
+        let text2 = "Hello Class SIT120!";
+        let part2 = text2.replace("Hello Class SIT120!", "My name is Jai!");
+        document.getElementById("strReplace").innerHTML = part2;
+    </script>
+
+    <script>
+        let text3 = "hello class sit120!";
+        let part3 = text3.toUpperCase();
+        document.getElementById("strToUpper").innerHTML = part3;
+    </script>
+
+    <script>
+        let text4 = "Hello" + " " + "Class" + " " + "SIT120!";
+        text4 = "Hello".concat(" ", "Class", " ", "SIT120!");
+        document.getElementById("strConcat").innerHTML = text4;
+    </script>
+
+    <script>
+        let text5 = "               Hello!             ";
+        text5 = text5.trim();
+        document.getElementById("strTrim").innerHTML = text5;
+    </script>
+
+    <!-- Scripts for Number methods -->
+    <script>
+        let val1 = 5;
+        let val2 = 7;
+        let ans1 = 5 + 7;
+        document.getElementById("numAddition").innerHTML = ans1;
+    </script>
+
+    <script>
+        let x = 613;
+        document.getElementById("numToString").innerHTML = 
+            x.toString() + "<br>" + 
+            (12 + 30).toString() + "<br>" +
+            (613).toString();
+    </script>
+
+    <script>
+        let y = 6.6892;
+        document.getElementById("numToExponential").innerHTML =
+            y.toExponential() + "<br>" +
+            y.toExponential(2) + "<br>" +
+            y.toExponential(3) + "<br>" +
+            y.toExponential(6);
+    </script>
+
+    <script>
+        let z = 12.4193
+        document.getElementById("numToFixed").innerHTML = 
+            z.toFixed() + "<br>" +
+            z.toFixed(2) + "<br>" +
+            z.toFixed(3) + "<br>" +
+            z.toFixed(6);
+    </script>
+
+    <script>
+        document.getElementById("numToNumber").innerHTML = 
+            Number(true) + "<br>" +
+            Number(false) + "<br>" +
+            Number("15") + "<br>" + 
+            Number("  15") + "<br>" +
+            Number("15  ") + "<br>" +
+            Number(" 15  ") + "<br>" +
+            Number("15.15") + "<br>" + 
+            Number("15,15") + "<br>" +
+            Number("15 15") + "<br>" +
+            Number("Dude");
+    </script>
+
+    <!-- Scripts for Array Methods -->
+    <script>
+        const cars = ["Audi", "Ford", "Porsche"];
+        const numbers = ["21", "523", "5487", "911"];
+        let sizecars = cars.length;
+        let sizenumbers = numbers.length;
+        document.getElementById("arrayLength").innerHTML = sizecars;
+        document.getElementById("arrayLength1").innerHTML = sizenumbers;
+
+    </script>
+
+    <script>
+        document.getElementById("arrayToString").innerHTML = cars.toString();
+    </script>
+
+    <script>
+        document.getElementById("arrayJoin").innerHTML = cars.join(", ")
+    </script>
+
+    <script>
+        document.getElementById("arrayPush").innerHTML = cars;
+        cars.push("Toyota");
+        document.getElementById("arrayPush1").innerHTML = cars;
+    </script>
+
+    <script>
+        document.getElementById("arrayPop").innerHTML = numbers;
+        numbers.pop("5487");
+        document.getElementById("arrayPop1").innerHTML = numbers;
+    </script>
+
+    <!--Script for getting date-time at top right of page-->
+   <script>
+        var datetime = new Date();
+        document.getElementById("date-time").innerHTML = datetime;
+   </script>
+
+   <!-- Scripts for date-related methods, using the above defined datetime -->
+   <script>
+        document.getElementById("dateToDateString").innerHTML = datetime.toDateString();
+   </script>
+
+   <script>
+        document.getElementById("dateToUTC").innerHTML = datetime.toUTCString();
+   </script>
+
+   <script>
+        document.getElementById("dateToISO").innerHTML = datetime.toISOString();
+   </script>
+
+   <script>
+        const datetemp = new Date(2023, 8, 19);
+        const date24 = new Date(new Date(datetemp).getTime() + 60 * 60 * 24 * 1000);
+        document.getElementById("date24hours").innerHTML = date24;
+   </script>
+
+   <!-- Scripts for Function Methods-->
+   <script>
+        function toCelcius(f) {
+            return (5/9) * (f-32);
+        }
+
+        let fahrenValue = toCelcius(77);
+        document.getElementById("funcToCelcius").innerHTML = fahrenValue;
+        fahrenValue = toCelcius(125);
+        document.getElementById("funcToCelcius1").innerHTML = fahrenValue;
+        fahrenValue = toCelcius(0);
+        document.getElementById("funcToCelcius2").innerHTML = fahrenValue;
+   </script>
+
+   <script>
+        function joinStrings(firststring, secondstring) {
+            let stringArray = [firststring, secondstring];
+            let joinedStrings = stringArray.join(" ");
+            return joinedStrings;
+        }
+
+        let combinedString = joinStrings("Hello", "World!");
+        document.getElementById("funcJoinString").innerHTML = combinedString;
+        combinedString = joinStrings("My name is", "Jai!");
+        document.getElementById("funcJoinString1").innerHTML = combinedString;
+        combinedString = joinStrings("I am", "21 years old!");
+        document.getElementById("funcJoinString1").innerHTML = combinedString;
+   </script>
+
+</body>
